@@ -43,4 +43,4 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
-SELECT k0, avg(c21) FROM tbl1, tbl2 WHERE tbl1.k0 = tbl2.k0 AND c13 > 400
+SELECT k0, avg(c21) FROM tbl1 NATURAL JOIN tbl2 WHERE c13 > 400 GROUP BY k0
