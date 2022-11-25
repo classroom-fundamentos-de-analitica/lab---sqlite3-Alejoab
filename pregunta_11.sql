@@ -38,3 +38,4 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 -- 
+SELECT COUNT(*) FROM tbl1 GROUP BY STRFTIME('%Y', c14) HAVING STRFTIME('%Y', c14) = '2018'
